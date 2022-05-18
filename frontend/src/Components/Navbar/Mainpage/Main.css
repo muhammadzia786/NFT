@@ -1,0 +1,262 @@
+.mainimg {
+  width: 100%;
+  /* max-width: 1440px; */
+  /* height: 627px; */
+}
+.child {
+  width: 100%;
+  /* max-width: 1440px; */
+  /* height: 627px; */
+}
+.nftTextinput{
+  border-radius: 23px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.nftTextinputArea{
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+  border-radius: 41px;
+  border: 1px solid black;
+}
+ 
+
+.whowe {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 152px;
+  text-align: center;
+ 
+} 
+.common_whowe{
+  background: linear-gradient(180deg, #42fff4 0%, #ff008a 127.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.whow {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 152px;
+  text-align: center;
+  background: linear-gradient(180deg, #42fff4 0%, #ff008a 127.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+.conten {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.para {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 45px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 1121px;
+  width: 100%;
+}
+.nfthead {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 152px;
+  text-align: center;
+  background: linear-gradient(180deg, #42fff4 0%, #ff008a 107.57%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-top: 60px;
+}
+.paratwo {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 49px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 1101px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.nftdiv {
+  background: #5a2585;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1340px) {
+  .mainimg {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .whowe {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 132px;
+  }
+  .para {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 45px;
+    max-width: 921px;
+    width: 100%;
+  }
+  .child {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .nfthead {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 102px;
+    margin-top: 40px;
+  }
+  .paratwo {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 39px;
+    max-width: 901px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mainimg {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .whowe {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 112px;
+  }
+  .para {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 701px;
+    width: 100%;
+  }
+  .child {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .nfthead {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 102px;
+    margin-top: 35px;
+  }
+  .paratwo {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 701px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 34px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    justify-content: center;
+    margin-left: 17px;
+  }
+  .mainimg {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .whowe {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 112px;
+  }
+  .para {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0px 40px;
+  }
+  .child {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .nfthead {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 70px;
+    margin-top: 35px;
+  }
+  .paratwo {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  .nftTextinputArea {
+    width: 300px;
+    }
+}
+@media only screen and (max-width: 450px) {
+  .mainimg {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .whowe {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+  }
+  .para {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    padding: 20px 40px;
+  }
+  .child {
+    width: 100%;
+    max-width: 1440px;
+  }
+  .nfthead {
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 30px;
+    margin-top: 35px;
+    margin-bottom: 0px;
+  }
+  .paratwo {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+}

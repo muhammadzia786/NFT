@@ -1,0 +1,420 @@
+.admin-add-product-page {
+  width: 100%;
+  overflow-y: scroll;
+  padding: 0 70px 100px;
+
+  .label {
+    font-family: "Chivo";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #000;
+  }
+
+  .input-field-wrap {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+
+    padding-bottom: 20px;
+    border-bottom: 1px solid #bebebe;
+
+    .input-wrap {
+      textarea,
+      input {
+        width: 100%;
+        margin-top: 10px;
+        border: 2px solid #bebebe;
+        border-radius: 2px;
+        font-family: "Chivo";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #000;
+        padding: 18.5px;
+
+        outline: none;
+      }
+    }
+  }
+
+  .select-fields-wrap {
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 30px;
+
+    .select-wrap {
+      select {
+        width: 100%;
+        margin-top: 10px;
+        border: 2px solid #bebebe;
+        border-radius: 2px;
+        font-family: "Chivo";
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: capitalize;
+        color: #000;
+        padding: 18.5px;
+
+        outline: none;
+
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-repeat: no-repeat, repeat;
+        background-position: right 0.7em top 50%, 0 0;
+        background-size: 0.65em auto, 100%;
+      }
+    }
+  }
+
+  .image-fields-wrap {
+    margin-top: 40px;
+
+    .image-wrap {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      .choose-image {
+        border: 3px dashed #c4c4c4;
+        background: #e5e5e5;
+        padding: 70px 0;
+        height: 200px;
+        display: flex;
+        
+        justify-content: center;
+
+        .button-upload {
+          display: flex;
+          align-items: center;
+
+          .choose {
+            margin-left: 20px;
+            background: #fff;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            font-family: "Chivo";
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: capitalize;
+            color: #000;
+            padding: 17px 68px;
+          }
+        }
+      }
+
+      .show-image {
+        border: 1px solid #c4c4c4;
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .add-btn {
+    cursor: pointer;
+    margin-top: 40px;
+    // background: linear-gradient(90.16deg, #4059a6 0%, #6ec8d2 100%);
+    background-color: #ee1c15;
+    padding: 17px;
+    font-family: "Chivo";
+    font-weight: 400;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .admin-add-product-page {
+    padding: 0 20px 80px;
+
+    .label {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .input-field-wrap {
+      margin-top: 30px;
+      padding-bottom: 20px;
+      gap: 15px;
+
+      .input-wrap {
+        textarea,
+        input {
+          margin-top: 5px;
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .select-fields-wrap {
+      margin-top: 30px;
+      column-gap: 15px;
+      row-gap: 25px;
+
+      .select-wrap {
+        select {
+          margin-top: 5px;
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    .image-fields-wrap {
+      margin-top: 40px;
+
+      .image-wrap {
+        margin-top: 5px;
+        gap: 15px;
+
+        .choose-image {
+          padding: 70px 0;
+
+          .button-upload {
+            img {
+              width: 45px;
+            }
+
+            .choose {
+              margin-left: 15px;
+              font-size: 20px;
+              line-height: 25px;
+              padding: 15px 55px;
+            }
+          }
+        }
+      }
+    }
+
+    .add-btn {
+      margin-top: 40px;
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .admin-add-product-page {
+    .label {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .input-field-wrap {
+      .input-wrap {
+        textarea,
+        input {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .select-fields-wrap {
+      .select-wrap {
+        select {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .image-fields-wrap {
+      .image-wrap {
+        .choose-image {
+          .button-upload {
+            img {
+              width: 40px;
+            }
+
+            .choose {
+              padding: 12px 40px;
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .add-btn {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .admin-add-product-page {
+    padding: 0 20px 70px;
+
+    .label {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    .input-field-wrap {
+      .input-wrap {
+        textarea,
+        input {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .select-fields-wrap {
+      .select-wrap {
+        select {
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .image-fields-wrap {
+      .image-wrap {
+        .choose-image {
+          .button-upload {
+            img {
+              width: 40px;
+            }
+
+            .choose {
+              padding: 12px 40px;
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .add-btn {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .admin-add-product-page {
+    padding: 0 10px 50px;
+
+    .input-field-wrap {
+      margin-top: 25px;
+      padding-bottom: 15px;
+      gap: 10px;
+    }
+
+    .select-fields-wrap {
+      margin-top: 25px;
+      column-gap: 10px;
+      row-gap: 20px;
+    }
+
+    .image-fields-wrap {
+      margin-top: 25px;
+
+      .image-wrap {
+        gap: 10px;
+
+        .choose-image {
+          padding: 65px 0;
+
+          .button-upload {
+            .choose {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .add-btn {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .admin-add-product-page {
+    .label {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .input-field-wrap {
+      grid-template-columns: auto;
+
+      .input-wrap {
+        textarea,
+        input {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .select-fields-wrap {
+      grid-template-columns: 1fr 1fr;
+
+      .select-wrap {
+        select {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .image-fields-wrap {
+      .image-wrap {
+        grid-template-columns: auto;
+
+        .choose-image {
+          padding: 60px 0;
+
+          .button-upload {
+            img {
+              width: 30px;
+            }
+
+            .choose {
+              padding: 10px 35px;
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .add-btn {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+.show_banner_img{
+  height: 200px;
+
+}

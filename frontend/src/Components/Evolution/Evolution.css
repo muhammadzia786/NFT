@@ -1,0 +1,636 @@
+.evomain {
+  background-color: #000;
+}
+#root {
+  overflow: hidden !important;
+}
+
+.mainlinecontainer{
+  position: relative;
+  left: 70px;
+}
+
+.line{
+  position: absolute;
+  margin-top: 53px;
+  height: 117vh;
+}
+
+.a{
+position: absolute;
+margin-top: 38px;
+margin-left: -10px;
+}
+.b{
+  top: 42vh;
+  position: absolute;
+  margin-left: -11px;
+  /* border: 1px solid white; */
+  top: 44vh;
+}
+.c{
+  position: absolute;
+  /* border: 1px solid white; */
+  margin-left: -8px;
+  top: 93vh;
+
+}
+
+
+.evohead {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 152px;
+  text-align: center;
+  background: linear-gradient(180deg, #42fff4 30.25%, #ff008a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-top: 30px;
+}
+.markerdiv {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  margin-bottom: 0px;
+}
+.marker {
+  position: absolute;
+  width: 2px;
+  height: 45vh;
+  border: 6px solid #42fff4;
+  margin-left: 32px;
+}
+.elips {
+  position: relative;
+  left: 0px;
+  /* bottom: 400px; */
+  z-index: 1;
+}
+.helips {
+  position: relative;
+  left: 0px;
+  top: -6px;
+  z-index: 1;
+}
+.elipsss {
+  position: relative;
+  left: 52px;
+  top: -20px;
+  z-index: 1;
+}
+.elipstwo {
+  position: relative;
+  left: -263px;
+  top: -6px;
+  z-index: 1;
+}
+.child1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  text-align: left;
+  margin-left: 30px;
+  padding-left: 84px;
+}
+.evopara {
+  min-width: 59vh;
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.evoheadpara {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 108px;
+  color: #42fff4;
+  margin-bottom: 0px;
+}
+.marcntdiv {
+  display: flex;
+}
+.childimgdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.childimg {
+  max-width: 327px;
+  width: 100%;
+  height: 335px;
+}
+.evoparatwo {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.childtwo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  text-align: left;
+}
+.childimgdivtwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  padding-left: 130px;
+}
+.markerdivtwo {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  margin-bottom: 0px;
+}
+.markerthree {
+  position: absolute !important;
+  width: 10px !important;
+  left: 320px;
+  height: 1200px !important;
+  border: 6px solid #42fff4;
+}
+/* .hmarkerthree {
+  position: absolute;
+  width: 2px;
+  height: 400px;
+  border: 6px solid #42fff4;
+} */
+.markerdivthree {
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  padding-bottom: 70px;
+}
+.testclass{
+  margin-left: 7vh;
+}
+@media only screen and (max-width: 1870px) {
+  .mainlinecontainer{
+     left: 260px;
+  }
+  .b{
+   top: 425px;
+  }
+  .c{
+   top: 910px;
+  }
+  .line{
+   
+    height: 1200px;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .mainlinecontainer{
+    left: 200px;
+ }
+
+}
+@media only screen and (max-width: 1467px) {
+  .mainlinecontainer{
+    left: 160px;
+ }
+
+}
+@media only screen and (max-width: 1340px) {
+  .elipsss {
+    left: -9px;
+    top: -20px;
+  }
+  .evohead {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 152px;
+  }
+  .evoheadpara {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 90px;
+  }
+  .evopara {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .childimg {
+    max-width: 280px;
+    width: 100%;
+    height: 280px;
+  }
+  .child1 {
+    margin-left: 0px;
+  }
+  .evoparatwo {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+  }
+  .childimgdivtwo {
+    margin-left: 30px;
+    width: 100%;
+    max-width: 300px;
+    padding-left: 30px;
+  }
+  .childtwo {
+    width: 100%;
+    max-width: 480px;
+  }
+  .marker {
+    margin-left: -30px;
+    height: 40vh;
+  }
+  .markerthree {
+    height: 1065px;
+  }
+  .hmarkerthree {
+    height: 335px;
+  }
+  .testclass{
+    margin-left: -2vh;
+  }
+  .helips{
+    position: relative;
+    left: 19px;
+  }
+  .mainlinecontainer{
+    left: 140px;
+ }
+ .b{
+   top: 372px;
+ }
+ .c{
+   top:789px
+ }
+ .line{
+   height: 1000px;
+ }
+}
+
+@media only screen and (max-width: 1275px) {
+
+  .mainlinecontainer{
+    left: 100px;
+ }
+}
+@media only screen and (max-width: 1160px) {
+
+  .mainlinecontainer{
+    left: 65px;
+ }
+}
+@media only screen and (max-width: 991px) {
+  .elipsss {
+    left: 4px;
+    top: -20px;
+  }
+  .evohead {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 132px;
+  }
+  .evoheadpara {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 70px;
+  }
+  .evopara {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .childimg {
+    max-width: 240px;
+    width: 100%;
+    height: 240px;
+  }
+  .child1 {
+    margin-left: 0px;
+    max-width: 410px;
+  }
+  .evoparatwo {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .childimgdivtwo {
+    margin-left: 30px;
+    width: 100%;
+    max-width: 250px;
+    padding-left: 30px;
+  }
+  .childtwo {
+    width: 100%;
+    max-width: 300px;
+  }
+  .marker {
+    margin-left: -16px;
+    height: 35vh;
+  }
+  .markerthree {
+    height: 925px;
+  }
+  .hmarkerthree {
+    height: 335px;
+  }
+  .testclass{
+    margin-left: -23px;
+  }
+  .helips{
+    left: 24px;
+  }
+  .line{
+    height: 915px;
+  }
+  .a{margin-top: 29px;}
+  .b{
+    top: 330px;
+  }
+  .c{
+    top:706px
+  }
+}
+@media only screen and (max-width: 768px) {
+  .elipsss {
+    left: 30px;
+    top: -20px;
+  }
+  .evohead {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 132px;
+  }
+  .evoheadpara {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .evopara {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .childimg {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+  }
+  .child1 {
+    margin-left: 0px;
+    max-width: 290px;
+    padding-left: 45px;
+  }
+  .evoparatwo {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .childimgdivtwo {
+    margin-left: 30px;
+    width: 100%;
+    max-width: 250px;
+    padding-left: 30px;
+  }
+  .childtwo {
+    width: 100%;
+    max-width: 270px;
+  }
+  .marker {
+    margin-left: 8px;
+    height: 32vh;
+  }
+  .markerthree {
+    height: 834px;
+  }
+  .hmarkerthree {
+    height: 225px;
+  }
+  .testclass{
+    margin-left: 2vh;
+  }
+  .helips{
+    left: 17px;
+  }
+  .line{
+    height: 830px;
+    margin-top: 2vh;
+  }
+  .a{
+    margin-top: 8px;
+  }
+  .b{
+    top: 293px;
+  }
+  .c{
+    top:609px
+  }
+  .mainlinecontainer{
+    left: 20px;
+ }
+}
+
+@media only screen and (max-width: 600px) {
+  .elipsss {
+    left: 33px;
+    top: -20px;
+  }
+  .evohead {
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 132px;
+  }
+  .evoheadpara {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .evopara {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .childimg {
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+  }
+  .child1 {
+    margin-left: 0px;
+    max-width: 250px;
+    padding-left: 45px;
+  }
+  .evoparatwo {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .childimgdivtwo {
+    margin-left: 30px;
+    width: 100%;
+    max-width: 250px;
+    padding-left: 30px;
+  }
+  .childtwo {
+    width: 100%;
+    max-width: 250px;
+  }
+  .marker {
+    margin-left: 13px;
+    height: 27vh;
+  }
+  .markerthree {
+    height: 700px;
+  }
+  .hmarkerthree {
+    height: 225px;
+  }
+  /* .testclass{
+    margin-left: 23px;
+  } */
+  .helips{
+    left: 23px;
+  }
+  .a{
+    display: none;
+
+  }
+  .b{
+    /* margin-top: -58px; */
+    display: none;
+
+  }
+  .c{
+    /* margin-top: -98px; */
+    display: none;
+    
+  }
+  .line {
+    /* height: 700px; */
+    display: none;
+
+  }
+}
+@media only screen and (max-width: 500px) {
+  .elipsss {
+    display: none;
+  }
+  .elips {
+    display: none;
+  }
+  .helips {
+    display: none;
+  }
+  .evohead {
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 102px;
+  }
+  .evoheadpara {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .evopara {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .childimg {
+    max-width: 250px;
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+  }
+  .childimgtwo {
+    max-width: 250px;
+    width: 100%;
+    height: 250px;
+  }
+  .childimgdivtwo {
+    padding-left: 0px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+  }
+  .child1 {
+    margin-left: 0px;
+    max-width: 350px;
+    padding-left: 15px;
+    margin-top: 30px;
+  }
+  .evoparatwo {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .childtwo {
+    width: 100%;
+    max-width: 310px;
+  }
+  .marker {
+    display: none;
+  }
+  .markerthree {
+    display: none;
+  }
+  .hmarkerthree {
+    display: none;
+  }
+  .markerdivthree {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+  }
+  .marcntdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .markerdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .markerdivtwo {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  /* .a{
+    margin-top: 39px;
+  }
+  .b{
+    margin-top: 176px;
+  }
+  .c{
+    margin-top: 347px;
+  } */
+  .line {
+    /* height: 1255px;
+    margin-top: 59px ; */
+  }
+}

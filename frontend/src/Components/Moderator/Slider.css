@@ -1,0 +1,142 @@
+.mainslider {
+  background-color: #5a2585;
+  width: 100%;
+  /* display: flex; */
+  /* padding-left: 140px; */
+  /* padding-right: 50px; */
+  margin-top: -20px;
+  padding-bottom: 100px;
+  /* border: 2px solid red; */
+}
+.card-body {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  width: 425px;
+}
+.read {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 54px;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  margin-top: 88px;
+}
+.lorempara {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+.desig {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 550 !important;
+  font-size: 32px;
+  line-height: 74px;
+  text-align: center;
+  color: #000000;
+}
+.crdtxt {
+  background-color: #42fff4;
+}
+.ourteam_container {
+  background-color: #5a2585;
+  width: 100%;
+}
+.team {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 152px;
+  text-align: center;
+  background: linear-gradient(180deg, #42fff4 0%, #ff008a 112.17%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 1300px) {
+  .mainslider {
+    /* padding-left: 100px; */
+    padding-right: 0px;
+  }
+  .card {
+    width: 350px;
+  }
+  .team {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .mainslider {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .card {
+    width: 350px;
+  }
+  .card-body {
+    height: auto;
+  }
+  .read {
+    margin-top: 9px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .team {
+    font-size: 65px;
+  }
+  .mainslider {
+    padding-left: 00px;
+    padding-right: 0px;
+  }
+  .card-body {
+    height: auto;
+  }
+  .read {
+    margin-top: 0px;
+  }
+  .card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .mainslider {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .team {
+    font-size: 40px;
+    
+  }
+  .mainslider {
+    padding-left: 40px;
+  }
+}

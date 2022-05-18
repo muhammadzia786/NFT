@@ -1,0 +1,36 @@
+.navbarmain {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Jaldi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 46px;
+  text-align: left;
+  color: #5efedd !important;
+}
+.navbar-expand-lg .navbar-collapse {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.navbar {
+  padding: 0px !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  margin-right: 63px;
+}
+.navbar-expand-lg .navbar-nav {
+  display: contents;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../images//kkk.png) !important;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 1190px) {
+.navbar-light .navbar-nav .nav-link {
+  font-size: 19px;
+}}
