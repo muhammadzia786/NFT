@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -104,6 +104,10 @@ const ResponsiveDrawer = () => {
     </div>
   );
 
+  useEffect(() => {
+    const userToken = localStorage?.getItem("token");
+    console.log("userToken", userToken);
+  }, [userToken]);
   return (
     <Box sx={{ display: "flex", backgroundColor: "lavender" }}>
       {/* {userToken ? (

@@ -24,6 +24,7 @@ function App() {
   const [roadText, setRoadText] = React.useState("");
   const [nftTitle, setNftTitle] = React.useState("");
   const [nftText, setNftText] = React.useState("");
+  const [UserToken, setUserToken] = React.useState("");
 
   const [carousel, setCarousel] = React.useState([]);
   const [nftData, setNftData] = React.useState();
@@ -32,6 +33,11 @@ function App() {
   const userToken = localStorage?.getItem("token");
   console.log("userToken", userToken);
 
+  const setToken = (obj) => {
+    console.log("token==?", obj);
+
+    setUserToken(obj);
+  };
   const ChangeText = (obj) => {
     setTitle(obj.title);
     setText(obj.text);
@@ -70,24 +76,25 @@ function App() {
           image,
           carousel,
           nftData,
-
+          UserToken,
+          setToken,
           ChangeText,
         }}
       >
         <div className="App"></div>
         <Routes>
-          {!userToken ? (
+          {userToken ? (
             <>
               <Route path="/" exact element={<LandingPage />}></Route>
-              <Route path="/Dashboard" exact element={<LandingPage />}></Route>
-              <Route path="/auth/login" exact element={<SignInForm />}></Route>
+              <Route path="/Dashboard" exact element={<Dashboard />}></Route>
+              <Route path="/auth/login" exact element={<LandingPage />}></Route>
               {/* <Route path="/auth/signup" exact element={<SignUpFrom />}></Route> */}
             </>
           ) : (
             <>
               <Route path="/" exact element={<LandingPage />}></Route>
-              <Route path="/Dashboard" exact element={<Dashboard />}></Route>
-              <Route path="/auth/login" exact element={<LandingPage />}></Route>
+              <Route path="/Dashboard" exact element={<LandingPage />}></Route>
+              <Route path="/auth/login" exact element={<SignInForm />}></Route>
               {/* <Route
                 path="/auth/signup"
                 exact

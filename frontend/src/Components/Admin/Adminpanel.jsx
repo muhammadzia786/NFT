@@ -502,7 +502,8 @@ const Adminpanel = () => {
                       {console.log("remove img", data, index)}
                       <div
                         className="coin_show_close"
-                        onClick={() => removeImage(data.img, index)}>
+                        onClick={() => removeImage(data.img, index)}
+                      >
                         <AiFillCloseCircle />
                       </div>
                       <img
@@ -583,7 +584,8 @@ const Adminpanel = () => {
                       {console.log("remove img", data, index)}
                       <div
                         className="coin_show_close"
-                        onClick={() => MremoveImage(data.img, index)}>
+                        onClick={() => MremoveImage(data.img, index)}
+                      >
                         <AiFillCloseCircle />
                       </div>
                       <img

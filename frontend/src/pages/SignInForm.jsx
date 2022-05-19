@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Card from "@mui/material/Card";
 import { NavLink, useNavigate } from "react-router-dom";
 import "../pages/css/login.css";
 import axios from "axios";
 import LoadingProgressBar from "../Components/LoadingProgressBar";
+import { AdminContext } from "../Components/AdminContext";
 import { Box, Typography } from "@mui/material";
 const SignInForm = () => {
   const navigate = useNavigate();
+  const adminContext = useContext(AdminContext);
   const [DataErrorEmail, setDataErrorEmail] = useState(false);
   const [DataErrorPassword, setDataErrorPassword] = useState(false);
   const [ErrorNotUser, setErrorNotUser] = useState(false);
@@ -19,6 +21,22 @@ const SignInForm = () => {
     email: "",
     password: "",
   });
+
+  const token = localStorage.getItem("token");
+  console.log("token", token);
+
+  const renderDashboard = () => {
+    if (token !== null) {
+      navigate("/Dashboard");
+      adminContext.setToken(token);
+      console.log("token in singinin fomr token==?", token);
+    }
+  };
+
+  useEffect(() => {
+    renderDashboard();
+  }, [token]);
+
   const handlechange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
@@ -60,13 +78,13 @@ const SignInForm = () => {
           if (response?.data?.message === "Successfull Login") {
             setLoginSucess(true);
             localStorage.setItem("token", response?.data?.token);
+            if (response?.data?.token) {
+              renderDashboard();
+            }
 
             const timer = setTimeout(() => {
               setLoginSucess(false);
               setLoader(false);
-              if (response?.data?.token) {
-                navigate("/Dashboard");
-              }
             }, 2000);
 
             return () => clearTimeout(timer);
